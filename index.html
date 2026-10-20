@@ -33,7 +33,7 @@ nav{gap:1rem}button{padding:.55rem .7rem}.controls{gap:.25rem}.counter{min-width
 </style>
 </head>
 <body>
-<header><a href="./">Cartea Daliei · AI pentru liceeni</a><nav aria-label="Materiale"><a href="event-demo.html">Deschide demo-ul fictiv</a><a href="downloads/cartea-daliei-ai.pptx?v=narration-20261020" download>Descarca PowerPoint</a></nav></header>
+<header><a href="./">Cartea Daliei · AI pentru liceeni</a><nav aria-label="Materiale"><a href="event-demo.html">Deschide demo-ul fictiv</a><a href="downloads/cartea-daliei-ai.pptx?v=visuals-20261020" download>Descarca PowerPoint</a></nav></header>
 <main>
 <h1>Cum a ajuns AI atat de capabil si ce poti face tu cu el?</h1>
 <div class="stage" id="stage"><img id="slide" src="slides/slide-01.svg" alt="Slide 1: Primul meu cod a fost pe hartie."></div>
@@ -84,7 +84,7 @@ document.querySelector('#fullscreen').addEventListener('click',async()=>{
  }catch(e){error.textContent='Browserul nu a putut deschide ecranul complet. Poti continua in aceasta pagina.';error.hidden=false;console.error('Fullscreen failed',e);}
 });
 image.addEventListener('error',()=>{error.textContent='Slide-ul nu s-a putut incarca. Reincarca pagina sau descarca PowerPoint-ul.';error.hidden=false;});
-fetch('slides.json?v=narration-20261020').then(response=>{
+fetch('slides.json?v=visuals-20261020').then(response=>{
  if(!response.ok)throw new Error(`Slides: HTTP ${response.status}`);
  return response.json();
 }).then(data=>{

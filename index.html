@@ -23,8 +23,7 @@ main{padding-top:.3rem}h1{font-size:clamp(1.3rem,3vw,1.8rem);line-height:1.2;mar
 .counter{font-variant-numeric:tabular-nums;color:var(--muted);min-width:5.5rem;text-align:center}
 #fullscreen{margin-left:auto}.hint,footer{color:var(--muted);font-size:.85rem}
 details{border-top:1px solid #405069;padding-top:1rem;margin-top:1rem}summary{cursor:pointer;min-height:44px}
-#transcript,#speaker-notes,#sources{white-space:pre-wrap;max-width:75ch;color:var(--muted);overflow-wrap:anywhere}
-#speaker-notes{font-size:1.05rem;line-height:1.7}h2{font-size:1rem;margin:1.5rem 0 .5rem}
+#transcript{white-space:pre-wrap;max-width:75ch;color:var(--muted);overflow-wrap:anywhere}
 #error{color:#ffccd5}footer{display:flex;gap:1rem;justify-content:space-between;flex-wrap:wrap}
 [hidden]{display:none!important}
 @media(max-width:600px){header,main,footer{padding:1rem}header{align-items:start;flex-direction:column;gap:.6rem}
@@ -33,7 +32,7 @@ nav{gap:1rem}button{padding:.55rem .7rem}.controls{gap:.25rem}.counter{min-width
 </style>
 </head>
 <body>
-<header><a href="./">Cartea Daliei · AI pentru liceeni</a><nav aria-label="Materiale"><a href="event-demo.html">Deschide demo-ul fictiv</a><a href="downloads/cartea-daliei-ai.pptx?v=visuals-20261020" download>Descarca PowerPoint</a></nav></header>
+<header><a href="./">Cartea Daliei · AI pentru liceeni</a><nav aria-label="Materiale"><a href="event-demo.html">Deschide demo-ul fictiv</a><a href="downloads/cartea-daliei-ai.pptx?v=slides-only-20261020" download>Descarca PowerPoint</a></nav></header>
 <main>
 <h1>Cum a ajuns AI atat de capabil si ce poti face tu cu el?</h1>
 <div class="stage" id="stage"><img id="slide" src="slides/slide-01.svg" alt="Slide 1: Primul meu cod a fost pe hartie."></div>
@@ -46,7 +45,6 @@ nav{gap:1rem}button{padding:.55rem .7rem}.controls{gap:.25rem}.counter{min-width
 </div>
 <p class="hint">Sagetile stanga / dreapta schimba slide-ul. Home / End merg la primul / ultimul. Linkul pastreaza slide-ul curent.</p>
 <details><summary>Citeste textul slide-ului</summary><div id="transcript">Se incarca textul...</div></details>
-<details open><summary>Note de prezentare</summary><div id="speaker-notes">Se incarca notele...</div><h2>Surse</h2><div id="sources"></div></details>
 <noscript><p>Activeaza JavaScript pentru navigare sau <a href="downloads/cartea-daliei-ai.pptx">descarca prezentarea PowerPoint</a>.</p></noscript>
 </main>
 <footer><span>Material educational pentru liceeni. Demo-ul foloseste un eveniment fictiv.</span><a href="credits.html">Surse si imagini</a></footer>
@@ -64,8 +62,6 @@ function display(index,updateHash=true){
  image.src=slides[current].src;image.alt=`Slide ${current+1}: ${slides[current].title}`;
  counter.textContent=`${current+1} / ${slides.length}`;
  document.querySelector('#transcript').textContent=slides[current].text;
- document.querySelector('#speaker-notes').textContent=slides[current].notes;
- document.querySelector('#sources').textContent=slides[current].sources;
  prev.disabled=current===0;next.disabled=current===slides.length-1;
  if(updateHash)history.replaceState(null,'',`#slide=${current+1}`);
  error.hidden=true;
@@ -84,16 +80,15 @@ document.querySelector('#fullscreen').addEventListener('click',async()=>{
  }catch(e){error.textContent='Browserul nu a putut deschide ecranul complet. Poti continua in aceasta pagina.';error.hidden=false;console.error('Fullscreen failed',e);}
 });
 image.addEventListener('error',()=>{error.textContent='Slide-ul nu s-a putut incarca. Reincarca pagina sau descarca PowerPoint-ul.';error.hidden=false;});
-fetch('slides.json?v=visuals-20261020').then(response=>{
+fetch('slides.json?v=slides-only-20261020').then(response=>{
  if(!response.ok)throw new Error(`Slides: HTTP ${response.status}`);
  return response.json();
 }).then(data=>{
- if(!Array.isArray(data)||data.length!==14||data.some(slide=>typeof slide.notes!=='string'||!slide.notes.trim()||typeof slide.sources!=='string'))throw new Error('Manifestul prezentarii este invalid sau incomplet.');
+ if(!Array.isArray(data)||data.length!==14||data.some(slide=>typeof slide.src!=='string'||typeof slide.text!=='string'||'notes' in slide))throw new Error('Manifestul prezentarii este invalid.');
  slides=data;display(fromHash(),false);
 }).catch(e=>{
  error.textContent='Navigarea nu s-a putut incarca. Reincarca pagina sau descarca prezentarea PowerPoint.';error.hidden=false;
  document.querySelector('#transcript').textContent='Text indisponibil. Prezentarea poate fi descarcata din linkul de mai sus.';
- document.querySelector('#speaker-notes').textContent='Note indisponibile. Incearca din nou sau descarca PowerPoint-ul.';
  console.error('Presentation loading failed',e);
 });
 </script>

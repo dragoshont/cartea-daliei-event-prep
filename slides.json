@@ -2,71 +2,99 @@
   {
     "src": "slides/slide-01.svg",
     "title": "Primul meu cod a fost pe hartie.",
-    "text": "Primul meu cod a fost pe hartie.\n\nCARTEA DALIEI  /  CUM A AJUNS AI ATAT DE CAPABIL SI CE POTI FACE TU CU EL?\n\n1\n\n10 PRINT \"SALUT!\"\n20 GOTO 10\n\nExemplu BASIC ilustrativ\n\nScriam.\nUn prieten incerca."
+    "text": "Primul meu cod a fost pe hartie.\n\nCARTEA DALIEI  /  CUM A AJUNS AI ATAT DE CAPABIL SI CE POTI FACE TU CU EL?\n\n1\n\n10 PRINT \"SALUT!\"\n20 GOTO 10\n\nExemplu BASIC ilustrativ\n\nScriam.\nUn prieten incerca.",
+    "notes": "Cand eram de varsta voastra, auzeam despre calculatoare de la alti copii care aveau unul. Eu nu aveam, dar la un moment dat am primit o foaie cu comenzile unui limbaj de programare, BASIC.\nAm inceput sa scriu programe pe hartie. Le dadeam unui prieten care avea calculator, iar a doua zi imi aducea notite sau imi povestea ce nu mersese. Eu corectam si incercam din nou. Faceam un fel de remote debugging, doar ca raspunsul venea a doua zi.\nIn timp am avut si eu calculatorul meu si, de atunci, calculatoarele au ramas parte din viata mea.\nAstazi putem incerca idei mult mai repede. Dar partea care imi place a ramas aceeasi: ai o idee, incerci ceva, observi ce nu merge si imbunatatesti. Astazi o sa facem impreuna exact asta, cu ajutorul AI.",
+    "sources": "Poveste oferita de Dragos sau exemplu educational original."
   },
   {
     "src": "slides/slide-02.svg",
     "title": "Voi de unde porniti?",
-    "text": "Voi de unde porniti?\n\nCARTEA DALIEI  /  CUM A AJUNS AI ATAT DE CAPABIL SI CE POTI FACE TU CU EL?\n\n2\n\nA\n\nAm cerut explicatii.\n\nB\n\nAm creat texte, imagini sau muzica.\n\nC\n\nAm incercat sa construiesc ceva.\n\nD"
+    "text": "Voi de unde porniti?\n\nCARTEA DALIEI  /  CUM A AJUNS AI ATAT DE CAPABIL SI CE POTI FACE TU CU EL?\n\n2\n\nA\n\nAm cerut explicatii.\n\nB\n\nAm creat texte, imagini sau muzica.\n\nC\n\nAm incercat sa construiesc ceva.\n\nD",
+    "notes": "Inainte sa va arat ceva, sunt curios de unde pornim. Pentru ce ati folosit AI pana acum? Alegeti varianta cea mai apropiata de voi; si 'inca nu' este un raspuns foarte bun.\nProbabil avem experiente diferite. Pana la final vreau sa puteti face doua lucruri: sa formulati mai bine o cerere si sa verificati un rezultat fara sa va bazati doar pe AI.",
+    "sources": "Poveste oferita de Dragos sau exemplu educational original."
   },
   {
     "src": "slides/slide-03.svg",
     "title": "Mai intai, o masina invata un drum.",
-    "text": "Mai intai, o masina invata un drum.\n\nCARTEA DALIEI  /  CUM A AJUNS AI ATAT DE CAPABIL SI CE POTI FACE TU CU EL?\n\n3\n\nENIAC, cca 1947-1955\nU.S. Army / Wikimedia Commons\n\n1950\n\nTheseus gaseste iesirea.\n\nClaude Shannon: un labirint si memorie in relee.\n\n1966\n\nELIZA sustine o conversatie.\n\nJoseph Weizenbaum: reguli si tipare de limbaj.\n\n2022"
+    "text": "Mai intai, o masina invata un drum.\n\nCARTEA DALIEI  /  CUM A AJUNS AI ATAT DE CAPABIL SI CE POTI FACE TU CU EL?\n\n3\n\nENIAC, cca 1947-1955\nU.S. Army / Wikimedia Commons\n\n1950\n\nTheseus gaseste iesirea.\n\nClaude Shannon: un labirint si memorie in relee.\n\n1966\n\nELIZA sustine o conversatie.\n\nJoseph Weizenbaum: reguli si tipare de limbaj.\n\n2022",
+    "notes": "AI nu a aparut odata cu aplicatiile pe care le folosim astazi. In 1950, Claude Shannon construia un soricel electromecanic care invata traseul printr-un labirint. La inceput explora. Apoi sistemul putea folosi drumul retinut.\nFotografia din stanga arata cum aratau unele calculatoare timpurii. Nu este masina care controla soricelul.\nIn 1966, ELIZA putea parea un partener de conversatie folosind reguli si tipare. Parea ca intelege, desi mecanismul era foarte diferit de cel al asistentilor de azi.\nIntre aceste experimente si ChatGPT au trecut decenii de cercetare. Lansarea publica din 2022 a adus o schimbare vizibila: mult mai multi oameni au putut incerca direct o conversatie cu AI.",
+    "sources": "https://www.technologyreview.com/2018/12/19/138508/mighty-mouse/\nhttps://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html\nhttps://www.csail.mit.edu/news/eliza-wins-peabody-award\nhttps://openai.com/index/chatgpt/\nhttps://commons.wikimedia.org/wiki/File:Eniac.jpg | U.S. Army; public domain (PD-USGov-Military-Army); cca 1947-1955."
   },
   {
     "src": "slides/slide-04.svg",
     "title": "La biblioteca am deschis...",
-    "text": "La biblioteca am deschis...\n\nCARTEA DALIEI  /  CUM A AJUNS AI ATAT DE CAPABIL SI CE POTI FACE TU CU EL?\n\n4\n\nA\n\no carte\n\nB\n\nun laptop\n\nC"
+    "text": "La biblioteca am deschis...\n\nCARTEA DALIEI  /  CUM A AJUNS AI ATAT DE CAPABIL SI CE POTI FACE TU CU EL?\n\n4\n\nA\n\no carte\n\nB\n\nun laptop\n\nC",
+    "notes": "La biblioteca am deschis... Ce ati pune mai departe: o carte, un laptop sau o umbrela?\nAcum adaug ceva: aveam de terminat un proiect digital. Poate ca unii dintre voi ati schimba alegerea.\nNu exista un singur raspuns obligatoriu. Ce observam este ca informatia noua schimba continuarea la care ne asteptam. Acesta este un punct de plecare ca sa intelegem modelele de limbaj.\nVoturile noastre nu sunt probabilitatile unui model. Modelul a invatat tipare din multe exemple si le foloseste impreuna cu contextul. Iar o continuare plauzibila poate fi totusi falsa.",
+    "sources": "https://www.3blue1brown.com/lessons/mini-llm/"
   },
   {
     "src": "slides/slide-05.svg",
     "title": "Un fragment. Apoi inca unul.",
-    "text": "Un fragment. Apoi inca unul.\n\nCARTEA DALIEI  /  CUM A AJUNS AI ATAT DE CAPABIL SI CE POTI FACE TU CU EL?\n\n5\n\nContext\n\nTextul de pana acum\n\nPosibilitati\n\nContinuari posibile\n\nAlegere\n\nUn token nou\n\n\"La biblioteca...\"  >  \"...am deschis\"  >  \"...un laptop\""
+    "text": "Un fragment. Apoi inca unul.\n\nCARTEA DALIEI  /  CUM A AJUNS AI ATAT DE CAPABIL SI CE POTI FACE TU CU EL?\n\n5\n\nContext\n\nTextul de pana acum\n\nPosibilitati\n\nContinuari posibile\n\nAlegere\n\nUn token nou\n\n\"La biblioteca...\"  >  \"...am deschis\"  >  \"...un laptop\"",
+    "notes": "Un LLM genereaza textul pas cu pas. Priveste contextul, atribuie probabilitati unor continuari si selecteaza un token, adica un fragment de text. Uneori este un cuvant, alteori doar o parte. Fragmentul se adauga si procesul continua.\nDe ce poate face mai mult decat completarea unei propozitii? In antrenare, modelul isi ajusteaza predictiile pe foarte multe exemple. Metodele si calculul au progresat. Alte etape de antrenare il ajuta sa urmeze cerinte si sa raspunda mai util.\nUn asistent poate folosi si instrumente: cautare, analiza de imagini sau executare de cod. Astfel, de la o idee putem ajunge la o pagina pe care o deschidem si o incercam.\nDar faptul ca o poate genera nu inseamna ca a si verificat tot ce a scris.",
+    "sources": "https://www.3blue1brown.com/lessons/mini-llm/"
   },
   {
     "src": "slides/slide-06.svg",
     "title": "O idee poate deveni o pagina.",
-    "text": "O idee poate deveni o pagina.\n\nCARTEA DALIEI  /  CUM A AJUNS AI ATAT DE CAPABIL SI CE POTI FACE TU CU EL?\n\n6\n\nUn eveniment\npentru liceeni."
+    "text": "O idee poate deveni o pagina.\n\nCARTEA DALIEI  /  CUM A AJUNS AI ATAT DE CAPABIL SI CE POTI FACE TU CU EL?\n\n6\n\nUn eveniment\npentru liceeni.",
+    "notes": "Sa luam o idee simpla: vrem o pagina pentru un eveniment la liceu. Nu trebuie sa stim deja cum se scrie fiecare linie de cod ca sa putem descrie ce vrem.\nPriviti pagina: ce ati cauta daca ati fi invitati? Data, ora, locul, activitatile, costul. Exact aceste lucruri vor deveni criteriile noastre.\nAceasta captura este un exemplu pregatit pentru sesiune. In Copilot vom vedea ce putem obtine pornind de la o cerere si cum se schimba rezultatul cand o clarificam.",
+    "sources": "Poveste oferita de Dragos sau exemplu educational original."
   },
   {
     "src": "slides/slide-07.svg",
     "title": "Sa vedem ce intelege dintr-o idee.",
-    "text": "Sa vedem ce intelege dintr-o idee.\n\nCARTEA DALIEI  /  CUM A AJUNS AI ATAT DE CAPABIL SI CE POTI FACE TU CU EL?\n\n7\n\n\"Fa o pagina pentru\nun eveniment la liceu.\""
+    "text": "Sa vedem ce intelege dintr-o idee.\n\nCARTEA DALIEI  /  CUM A AJUNS AI ATAT DE CAPABIL SI CE POTI FACE TU CU EL?\n\n7\n\n\"Fa o pagina pentru\nun eveniment la liceu.\"",
+    "notes": "O sa incep intentionat cu o cerere scurta: fa o pagina pentru un eveniment la liceu.\nSa vedem ce intelege din ea. Daca imi cere detalii, foarte bine: a observat ca ii lipsesc informatii. Daca produce direct o pagina, ne uitam la presupunerile pe care le-a facut.\nNu cautam sa obtinem ceva perfect din prima. Vrem sa vedem unde trebuie sa intervenim noi. O pagina poate arata bine si totusi sa nu spuna cand are loc evenimentul.",
+    "sources": "Poveste oferita de Dragos sau exemplu educational original."
   },
   {
     "src": "slides/slide-08.svg",
     "title": "Mai intai, ne corectam intrebarea.",
-    "text": "Mai intai, ne corectam intrebarea.\n\nCARTEA DALIEI  /  CUM A AJUNS AI ATAT DE CAPABIL SI CE POTI FACE TU CU EL?\n\n8\n\nScopul.\nContextul.\nPresupunerile."
+    "text": "Mai intai, ne corectam intrebarea.\n\nCARTEA DALIEI  /  CUM A AJUNS AI ATAT DE CAPABIL SI CE POTI FACE TU CU EL?\n\n8\n\nScopul.\nContextul.\nPresupunerile.",
+    "notes": "Ce voiam, de fapt? O pagina care sa ajute un elev sa inteleaga daca vrea sa vina. Acum avem un scop si detalii.\nAdaugam numele, data, ora, locul, accesul gratuit si faptul ca trebuie sa mearga pe telefon. Cand schimbam cererea, avem si criterii dupa care putem judeca pagina.\nPuteti scrie in chat un lucru pe care l-ati mai clarifica. Eu am pregatit deja cateva, asa ca putem continua si fara raspunsuri.\nGandirea critica incepe chiar din felul in care intrebam. 'De ce AI ii face pe elevi lenesi?' presupune deja concluzia. 'Cand poate AI ajuta sau impiedica invatarea?' ne lasa sa exploram mai multe explicatii.\nO cerere mai buna poate aduce un rezultat mai util. Nu garanteaza ca fiecare informatie este adevarata.",
+    "sources": "https://uit.stanford.edu/service/techtraining/ai-demystified/prompt-engineering"
   },
   {
     "src": "slides/slide-09.svg",
     "title": "Arata bine. Dar ne putem baza pe ea?",
-    "text": "Arata bine. Dar ne putem baza pe ea?\n\nCARTEA DALIEI  /  CUM A AJUNS AI ATAT DE CAPABIL SI CE POTI FACE TU CU EL?\n\n9\n\nRespecta cererea?\n\nData, ora, locul si accesul sunt cele stabilite.\n\nFunctioneaza?\n\nButonul ajunge la program. Textul incape pe telefon."
+    "text": "Arata bine. Dar ne putem baza pe ea?\n\nCARTEA DALIEI  /  CUM A AJUNS AI ATAT DE CAPABIL SI CE POTI FACE TU CU EL?\n\n9\n\nRespecta cererea?\n\nData, ora, locul si accesul sunt cele stabilite.\n\nFunctioneaza?\n\nButonul ajunge la program. Textul incape pe telefon.",
+    "notes": "Acum verificam trei lucruri diferite. Mai intai: respecta ce am cerut? Comparam data si ora cu cererea noastra, nu cu memoria modelului.\nApoi: functioneaza? Apasam pe buton si deschidem pagina la latimea unui telefon. Programul incepe la 17 si se termina la 19? Cele trei intervale de 40 de minute dau doua ore?\nIn sfarsit: putem trata informatia drept adevarata? Aici evenimentul este fictiv. Pentru unul real, faptul ca AI a pus o data pe pagina nu o confirma. O verificam cu organizatorul sau cu anuntul oficial.\nUn raspuns poate suna sigur sau poate fi foarte frumos si totusi sa contina o informatie gresita. Tocmai de aceea trebuie sa alegem verificarea potrivita.",
+    "sources": "https://dayofai.org/units/truth-tricks-and-ai-learning-to-verify-information"
   },
   {
     "src": "slides/slide-10.svg",
     "title": "Cinci obiceiuri care raman la tine.",
-    "text": "Cinci obiceiuri care raman la tine.\n\nCARTEA DALIEI  /  CUM A AJUNS AI ATAT DE CAPABIL SI CE POTI FACE TU CU EL?\n\n10\n\nProtejeaza-ti datele.\n\nFara parole, acte sau date despre colegi.\n\nVerifica ce conteaza.\n\nAlege sursa, calculul sau testul potrivit.\n\nSiguranta nu este adevar.\n\nUn ton convingator poate ascunde o eroare.\n\nSpune unde te-a ajutat AI.\n\nRespecta regulile scolii si contributia altora."
+    "text": "Cinci obiceiuri care raman la tine.\n\nCARTEA DALIEI  /  CUM A AJUNS AI ATAT DE CAPABIL SI CE POTI FACE TU CU EL?\n\n10\n\nProtejeaza-ti datele.\n\nFara parole, acte sau date despre colegi.\n\nVerifica ce conteaza.\n\nAlege sursa, calculul sau testul potrivit.\n\nSiguranta nu este adevar.\n\nUn ton convingator poate ascunde o eroare.\n\nSpune unde te-a ajutat AI.\n\nRespecta regulile scolii si contributia altora.",
+    "notes": "Din tot ce am facut, as pastra cinci obiceiuri.\nProtejeaza-ti datele: nu ai nevoie sa trimiti parole, acte sau informatii despre colegi ca sa explorezi o idee.\nVerifica ce conteaza. Nu verificam la fel culoarea unui buton si o afirmatie despre sanatate.\nNu confunda tonul sigur cu adevarul. Ati vazut ca aspectul si corectitudinea sunt lucruri diferite.\nSpune unde te-a ajutat AI si respecta regulile scolii. Contributia ta poate fi ideea, selectia, verificarea si ceea ce ai schimbat.\nSi pastreaza decizia la tine. Daca nu intelegi rezultatul sau consecintele, opreste-te si cere sprijin. A folosi AI responsabil inseamna sa stii si cand sa nu te bazezi pe el.",
+    "sources": "https://dayofai.org/units/truth-tricks-and-ai-learning-to-verify-information"
   },
   {
     "src": "slides/slide-11.svg",
     "title": "Tech are mai multe usi de intrare.",
-    "text": "Tech are mai multe usi de intrare.\n\nCARTEA DALIEI  /  CUM A AJUNS AI ATAT DE CAPABIL SI CE POTI FACE TU CU EL?\n\n11\n\nIti place sa construiesti?\n\nSoftware Engineering\n\nAplicatii si sisteme care functioneaza.\n\nIti place sa investighezi?\n\nCybersecurity\n\nCum protejam oameni, date si sisteme.\n\nIti plac tiparele si intrebarile?\n\nData / AI\n\nCe putem afla din date si cum verificam.\n\nIti place sa desenezi si sa observi?\n\nUX / Design\n\nCum facem tehnologia usor de folosit.\n\nIti place sa organizezi si sa explici?\n\nProduct\n\nCe problema merita rezolvata si pentru cine.\n\nTe preocupa efectele asupra oamenilor?"
+    "text": "Tech are mai multe usi de intrare.\n\nCARTEA DALIEI  /  CUM A AJUNS AI ATAT DE CAPABIL SI CE POTI FACE TU CU EL?\n\n11\n\nIti place sa construiesti?\n\nSoftware Engineering\n\nAplicatii si sisteme care functioneaza.\n\nIti place sa investighezi?\n\nCybersecurity\n\nCum protejam oameni, date si sisteme.\n\nIti plac tiparele si intrebarile?\n\nData / AI\n\nCe putem afla din date si cum verificam.\n\nIti place sa desenezi si sa observi?\n\nUX / Design\n\nCum facem tehnologia usor de folosit.\n\nIti place sa organizezi si sa explici?\n\nProduct\n\nCe problema merita rezolvata si pentru cine.\n\nTe preocupa efectele asupra oamenilor?",
+    "notes": "Poate ca partea de cod v-a atras. Sau poate v-ati uitat mai degraba la cum arata pagina, la ce lipseste din program ori la cine poate participa.\nToate acestea au legatura cu munca in tech. Un software engineer construieste aplicatia. Cineva din cybersecurity se intreaba cum poate fi folosita gresit si cum o protejam. Data si AI inseamna sa lucrezi cu date si sa verifici ce concluzii poti trage.\nUX inseamna sa intelegi oamenii si sa faci produsul usor de folosit. Product inseamna sa alegi problema si prioritatile. Responsible AI inseamna sa te gandesti la efecte, riscuri si echitate.\nNu trebuie sa va alegeti acum o meserie. Puteti observa ce fel de intrebari va place sa puneti si sa incercati proiecte mici in directia aceea.",
+    "sources": "Poveste oferita de Dragos sau exemplu educational original."
   },
   {
     "src": "slides/slide-12.svg",
     "title": "AI poate propune. Tu alegi ce conteaza.",
-    "text": "AI poate propune. Tu alegi ce conteaza.\n\nCARTEA DALIEI  /  CUM A AJUNS AI ATAT DE CAPABIL SI CE POTI FACE TU CU EL?\n\n12\n\nUn rol concret: decizi cum ar trebui sa functioneze pagina.\n\nAI poate ajuta\n\nVariante de text.\nSchite de pagina.\nIdei pentru program.\n\nOmul judeca\n\nCui ii este utila?\nCine ramane pe dinafara?\nCe putem promite?"
+    "text": "AI poate propune. Tu alegi ce conteaza.\n\nCARTEA DALIEI  /  CUM A AJUNS AI ATAT DE CAPABIL SI CE POTI FACE TU CU EL?\n\n12\n\nUn rol concret: decizi cum ar trebui sa functioneze pagina.\n\nAI poate ajuta\n\nVariante de text.\nSchite de pagina.\nIdei pentru program.\n\nOmul judeca\n\nCui ii este utila?\nCine ramane pe dinafara?\nCe putem promite?",
+    "notes": "Sa luam un rol de Product: te ocupi ca pagina sa rezolve o problema pentru oameni. AI iti poate propune texte, schite si un program.\nDar daca participantii nu pot ramane dupa o anumita ora? Daca unii nu au laptop? Daca sala nu poate fi folosita atunci? Ai nevoie sa cunosti situatia, sa asculti si sa alegi ce este fezabil. O pagina convingatoare nu rezolva singura aceste lucruri.\nUnele sisteme pot deja folosi mai multe instrumente. In viitor am putea vedea mai multe activitati legate automat, dar nu stim exact ritmul, costul sau cat de fiabile vor deveni.\nDe aceea este mai util sa ne uitam la activitati decat sa spunem ca o meserie dispare sau este complet sigura. Cunostintele va ajuta sa observati greselile. Curiozitatea va ajuta sa explorati. Comunicarea si judecata va ajuta sa lucrati cu ceilalti si sa alegeti ce merita facut.",
+    "sources": "https://www.ilo.org/publications/generative-ai-and-jobs-2025-update"
   },
   {
     "src": "slides/slide-13.svg",
     "title": "Nu trebuie sa stii totul ca sa incepi.",
-    "text": "Nu trebuie sa stii totul ca sa incepi.\n\nCARTEA DALIEI  /  CUM A AJUNS AI ATAT DE CAPABIL SI CE POTI FACE TU CU EL?\n\n13\n\nIncearca un proiect mic.\n\nGitHub Copilot Free\nAcces gratuit, cu limite.\n\nGitHub Education\nBeneficii pentru elevii eligibili.\n\nSau incepe cu o intrebare."
+    "text": "Nu trebuie sa stii totul ca sa incepi.\n\nCARTEA DALIEI  /  CUM A AJUNS AI ATAT DE CAPABIL SI CE POTI FACE TU CU EL?\n\n13\n\nIncearca un proiect mic.\n\nGitHub Copilot Free\nAcces gratuit, cu limite.\n\nGitHub Education\nBeneficii pentru elevii eligibili.\n\nSau incepe cu o intrebare.",
+    "notes": "Pentru cei care vor sa incerce, GitHub Copilot are o varianta Free, cu limite, si exista beneficii GitHub Education pentru elevii eligibili.\nNu trebuie sa facem conturi acum. Puteti incepe si cu o idee pe hartie: ce vreti sa obtineti si cum veti sti ca a functionat?\nMi-ar placea sa alegeti ceva care va intereseaza, nu ceva ce credeti ca trebuie sa impresioneze. Un inceput mic va da ceva real de imbunatatit.",
+    "sources": "https://docs.github.com/en/copilot/get-started/plans\nhttps://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing\nhttps://education.github.com/pack\nhttps://docs.github.com/en/education/about-github-education/github-education-for-students/apply-to-github-education-as-a-student\nhttps://www.3blue1brown.com/lessons/mini-llm/"
   },
   {
     "src": "slides/slide-14.svg",
     "title": "AI poate mult. Intrebarile raman ale tale.",
-    "text": "AI poate mult. Intrebarile raman ale tale.\n\nCARTEA DALIEI  /  CUM A AJUNS AI ATAT DE CAPABIL SI CE POTI FACE TU CU EL?\n\n14\n\nUn instrument puternic.\n\nPoate ajuta mult. Poate si gresi.\n\nTu aduci valoare.\n\nPrin intrebari, alegeri si gandire.\n\nPoti incepe de acum."
+    "text": "AI poate mult. Intrebarile raman ale tale.\n\nCARTEA DALIEI  /  CUM A AJUNS AI ATAT DE CAPABIL SI CE POTI FACE TU CU EL?\n\n14\n\nUn instrument puternic.\n\nPoate ajuta mult. Poate si gresi.\n\nTu aduci valoare.\n\nPrin intrebari, alegeri si gandire.\n\nPoti incepe de acum.",
+    "notes": "As vrea sa ramaneti cu trei lucruri.\nAI este un instrument foarte puternic, dar nu este infailibil.\nValoarea voastra ramane in intrebarile pe care le puneti, in alegeri si in felul in care ganditi.\nSi nu trebuie sa stiti deja totul ca sa incepeti sa explorati si sa construiti.\nEu am inceput cu o foaie de comenzi si programe pe hartie. Provocarea mea pentru voi: alegeti o idee, incercati-o si aratati ce ati schimbat, verificat si invatat. Puteti incepe si pe hartie.\nAcum sunt curios ce intrebari aveti.",
+    "sources": "Poveste oferita de Dragos sau exemplu educational original."
   }
 ]

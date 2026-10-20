@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Atelier de idei | Exemplu fictiv pentru Cartea Daliei</title>
+<style>
+:root{--paper:#f5f3ec;--ink:#182636;--blue:#244bdd;--pink:#d63e76;--line:#c7cbc8}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:1rem}
+body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.5 Aptos,"Segoe UI",sans-serif}
+::selection{background:#d6ec79;color:var(--ink)}
+a{color:inherit;text-underline-offset:.2em}button,a{touch-action:manipulation}
+button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid var(--pink);outline-offset:5px}
+.demo{background:var(--ink);color:white;padding:.7rem max(5vw,1rem);display:flex;gap:1rem;align-items:center;justify-content:space-between;flex-wrap:wrap;font-size:.85rem}
+.switch{display:flex;gap:.3rem}.switch button{padding:.45rem .8rem;border:1px solid #b3bfcf;border-radius:0;background:transparent;color:white}
+.switch button[aria-pressed=true]{background:white;color:var(--ink);border-color:white}
+main{max-width:1250px;margin:auto;padding:0 5vw 3rem}
+header{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.5rem 0;border-bottom:1px solid var(--line)}
+.brand{font-weight:750;font-size:1.15rem;text-decoration:none;letter-spacing:-.03em}
+.fiction{font-size:.8rem}
+.hero{display:grid;grid-template-columns:1.25fr .8fr;gap:3rem;align-items:center;padding:3.5rem 0 2rem}
+h1{font-size:clamp(3rem,6vw,5.5rem);line-height:1.02;letter-spacing:-.045em;max-width:11ch;margin:0 0 1.5rem;font-weight:750}
+.intro{max-width:46ch;font-size:1.15rem}
+.action{display:inline-block;padding:.8rem 1.35rem;background:var(--blue);color:white;text-decoration:none;font-weight:650;margin:1rem 0}
+.action:hover{background:#1838b5}
+.poster{background:var(--blue);color:white;padding:1.5rem;aspect-ratio:1;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}
+.poster svg{width:100%;height:65%}.poster strong{font-size:clamp(1.5rem,3vw,2.5rem);line-height:1.1;max-width:12ch}
+.facts{border-block:1px solid var(--line);display:flex;flex-wrap:wrap;gap:1rem 3rem;padding:1.25rem 0}
+.facts span{font-size:1rem}.facts b{display:block;font-size:1.35rem}
+section{padding-top:2.2rem}h2{font-size:2rem;letter-spacing:-.035em;margin:0 0 .8rem}
+.program{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.session{border-top:2px solid var(--ink);padding-top:1rem}
+.session time{font-variant-numeric:tabular-nums;color:var(--blue);font-weight:700}
+.session h3{font-size:1.3rem;margin:.6rem 0}.session p{margin:.3rem 0}
+.more{border:0;border-bottom:1px solid var(--ink);background:transparent;color:var(--ink);padding:.4rem 0}
+.details{max-width:70ch}footer{border-top:1px solid var(--line);margin-top:2.5rem;padding-top:1rem;font-size:.85rem}
+[hidden]{display:none!important}
+@media(max-width:650px){main{padding-inline:1.25rem}.hero{grid-template-columns:1fr;gap:1.5rem;padding-top:2rem}
+.poster{aspect-ratio:1.6}.poster svg{position:absolute;width:55%;height:85%;right:0;bottom:0}.poster strong{z-index:1;max-width:8ch}
+.program{grid-template-columns:1fr;gap:1.2rem}.facts{gap:1rem 1.8rem}.fiction{max-width:15ch}h1{max-width:12ch}
+.switch{flex-wrap:wrap}header{align-items:start}.demo{gap:.6rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="demo">
+ <span>DEMO EDUCATIV · Exemplu pregatit, nu rezultat live din Copilot</span>
+ <div class="switch" role="group" aria-label="Compara cele doua versiuni">
+  <button type="button" id="initial" aria-pressed="false">Cerere vaga</button>
+  <button type="button" id="refined" aria-pressed="true">Cerere clarificata</button>
+ </div>
+</div>
+<main>
+<header><a class="brand" href="#top">Atelier de idei.</a><span class="fiction">Eveniment fictiv · Fara inscrieri reale</span></header>
+<div class="hero" id="top">
+ <div>
+  <h1 id="headline">Ideile merita o scena.</h1>
+  <p class="intro" id="intro">O dupa-amiaza in care incercam, construim si aratam ce ne pasioneaza. Pentru liceeni curiosi, fara experienta obligatorie.</p>
+  <a class="action" href="#program">Vezi programul</a>
+ </div>
+ <div class="poster" role="img" aria-label="Ilustratie originala: trei trasee diferite se intalnesc intr-o scena comuna">
+  <strong>Vino cu o idee. Pleaca cu un inceput.</strong>
+  <svg viewBox="0 0 400 250" aria-hidden="true">
+   <path d="M20 210C20 40 130 40 200 140S350 240 380 45" fill="none" stroke="#d6ec79" stroke-width="14"/>
+   <path d="M20 125C130 235 240 30 380 145" fill="none" stroke="#ffffff" stroke-width="14"/>
+   <path d="M20 40C110 0 230 240 380 210" fill="none" stroke="#ffb9d2" stroke-width="14"/>
+  </svg>
+ </div>
+</div>
+<div class="facts" id="facts" aria-label="Detalii eveniment fictiv">
+ <span>Data<b>30 octombrie 2026</b></span><span>Ora<b>17:00-19:00</b></span>
+ <span>Locul<b>Sala de festivitati</b></span><span>Acces<b>Gratuit</b></span>
+</div>
+<section id="program" aria-labelledby="program-title">
+ <h2 id="program-title">Doua ore. Trei feluri de a crea.</h2>
+ <div class="program">
+  <article class="session"><time>17:00-17:40</time><h3>Muzica & povesti</h3><p>Impartasim un ritm, o idee sau o poveste scurta.</p></article>
+  <article class="session"><time>17:40-18:20</time><h3>Un atelier cu AI</h3><p>Construim ceva mic si verificam ce obtinem.</p></article>
+  <article class="session"><time>18:20-19:00</time><h3>Ideile urca pe scena</h3><p>Aratam ce am incercat si ce am invatat.</p></article>
+ </div>
+ <p id="vague" hidden>Un program cu activitati interesante pentru elevi. Detaliile urmeaza.</p>
+</section>
+<section aria-labelledby="details-title">
+ <h2 id="details-title">Trebuie sa stii deja sa programezi?</h2>
+ <button class="more" type="button" aria-expanded="false" aria-controls="details">Afla ce trebuie sa aduci</button>
+ <p class="details" id="details" hidden>Nu. Poti veni cu o idee, un carnet de schite sau doar cu o intrebare. Nu este necesar un cont AI sau un laptop pentru a urmari activitatile. Acesta este un exemplu fictiv, folosit numai in demonstratie.</p>
+</section>
+<footer>Exemplu educational Cartea Daliei. Fara formulare, conturi sau inscrieri reale. Nu confirma participarea la vreun eveniment.</footer>
+</main>
+<script>
+const initial=document.querySelector('#initial'),refined=document.querySelector('#refined');
+function setStage(isRefined){
+ initial.setAttribute('aria-pressed',String(!isRefined));refined.setAttribute('aria-pressed',String(isRefined));
+ document.querySelector('#headline').textContent=isRefined?'Ideile merita o scena.':'Un eveniment la liceu.';
+ document.querySelector('#intro').textContent=isRefined?'O dupa-amiaza in care incercam, construim si aratam ce ne pasioneaza. Pentru liceeni curiosi, fara experienta obligatorie.':'Vino la un eveniment interesant cu activitati si surprize.';
+ document.querySelector('#facts').hidden=!isRefined;document.querySelector('.program').hidden=!isRefined;
+ document.querySelector('#vague').hidden=isRefined;document.querySelector('#program-title').textContent=isRefined?'Doua ore. Trei feluri de a crea.':'Program';
+}
+initial.addEventListener('click',()=>setStage(false));refined.addEventListener('click',()=>setStage(true));
+document.querySelector('.more').addEventListener('click',e=>{
+ const open=e.currentTarget.getAttribute('aria-expanded')==='true';
+ e.currentTarget.setAttribute('aria-expanded',String(!open));document.querySelector('#details').hidden=open;
+});
+setStage(new URLSearchParams(location.search).get('stage')!=='initial');
+</script>
+</body></html>

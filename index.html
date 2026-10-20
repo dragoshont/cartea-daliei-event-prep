@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Cum a ajuns AI atat de capabil si ce poti face tu cu el? O prezentare Cartea Daliei pentru liceeni.">
+<title>Cartea Daliei | AI pentru liceeni</title>
+<style>
+:root{color-scheme:dark;--bg:#101c2c;--paper:#f5f3ec;--ink:#e9edf4;--muted:#b8c6d7;--lime:#d6ec79}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Aptos,"Segoe UI",sans-serif}
+::selection{background:var(--lime);color:var(--bg)}a{color:inherit;text-underline-offset:4px}
+button{font:inherit;cursor:pointer;color:inherit;background:transparent;border:1px solid #8292a8;border-radius:4px;padding:.6rem 1rem;min-height:44px}
+button:hover:not(:disabled){background:#25364d}button:disabled{opacity:.4;cursor:default}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--lime);outline-offset:4px}
+header,main,footer{max-width:1360px;margin:auto;padding:1rem 2rem}
+header{display:flex;gap:1rem;align-items:center;justify-content:space-between}
+header>a{font-weight:750;text-decoration:none;letter-spacing:-.02em}nav{display:flex;gap:1.2rem;flex-wrap:wrap;font-size:.9rem}
+main{padding-top:.3rem}h1{font-size:clamp(1.3rem,3vw,1.8rem);line-height:1.2;margin:.4rem 0 1rem;letter-spacing:-.025em;font-weight:600}
+.stage{display:flex;align-items:center;justify-content:center;background:#0b1421;aspect-ratio:16/9;overflow:hidden}
+.stage img{display:block;width:100%;height:100%;object-fit:contain}
+.stage:fullscreen{width:100vw;height:100vh;aspect-ratio:auto}
+.controls{display:flex;align-items:center;gap:.7rem;margin:1rem 0}
+.counter{font-variant-numeric:tabular-nums;color:var(--muted);min-width:5.5rem;text-align:center}
+#fullscreen{margin-left:auto}.hint,footer{color:var(--muted);font-size:.85rem}
+details{border-top:1px solid #405069;padding-top:1rem;margin-top:1rem}summary{cursor:pointer;min-height:44px}
+#transcript{white-space:pre-wrap;max-width:75ch;color:var(--muted)}
+#error{color:#ffccd5}footer{display:flex;gap:1rem;justify-content:space-between;flex-wrap:wrap}
+[hidden]{display:none!important}
+@media(max-width:600px){header,main,footer{padding:1rem}header{align-items:start;flex-direction:column;gap:.6rem}
+nav{gap:1rem}button{padding:.55rem .7rem}.controls{gap:.25rem}.counter{min-width:4rem;font-size:.9rem}
+.hint{display:none}#fullscreen{font-size:.85rem}h1{font-size:1.35rem}}
+</style>
+</head>
+<body>
+<header><a href="./">Cartea Daliei · AI pentru liceeni</a><nav aria-label="Materiale"><a href="event-demo.html">Deschide demo-ul fictiv</a><a href="downloads/cartea-daliei-ai.pptx" download>Descarca PowerPoint</a></nav></header>
+<main>
+<h1>Cum a ajuns AI atat de capabil si ce poti face tu cu el?</h1>
+<div class="stage" id="stage"><img id="slide" src="slides/slide-01.svg" alt="Slide 1: Primul meu cod a fost pe hartie."></div>
+<p id="error" role="alert" hidden></p>
+<div class="controls" aria-label="Navigare slide-uri">
+ <button id="previous" type="button" disabled aria-label="Slide-ul anterior">Inapoi</button>
+ <span class="counter" id="counter" role="status" aria-live="polite">1 / 14</span>
+ <button id="next" type="button" disabled aria-label="Slide-ul urmator">Inainte</button>
+ <button id="fullscreen" type="button">Ecran complet</button>
+</div>
+<p class="hint">Sagetile stanga / dreapta schimba slide-ul. Home / End merg la primul / ultimul. Linkul pastreaza slide-ul curent.</p>
+<details><summary>Citeste textul slide-ului</summary><div id="transcript">Se incarca textul...</div></details>
+<noscript><p>Activeaza JavaScript pentru navigare sau <a href="downloads/cartea-daliei-ai.pptx">descarca prezentarea PowerPoint</a>.</p></noscript>
+</main>
+<footer><span>Material educational pentru liceeni. Demo-ul foloseste un eveniment fictiv.</span><a href="credits.html">Surse si imagini</a></footer>
+<script>
+let slides=[],current=0;
+const image=document.querySelector('#slide'),counter=document.querySelector('#counter'),error=document.querySelector('#error');
+const prev=document.querySelector('#previous'),next=document.querySelector('#next');
+function fromHash(){
+ const match=location.hash.match(/^#slide=(\d+)$/);
+ return match?Math.max(0,Math.min(slides.length-1,Number(match[1])-1)):0;
+}
+function display(index,updateHash=true){
+ if(!slides.length)return;
+ current=Math.max(0,Math.min(slides.length-1,index));
+ image.src=slides[current].src;image.alt=`Slide ${current+1}: ${slides[current].title}`;
+ counter.textContent=`${current+1} / ${slides.length}`;
+ document.querySelector('#transcript').textContent=slides[current].text;
+ prev.disabled=current===0;next.disabled=current===slides.length-1;
+ if(updateHash)history.replaceState(null,'',`#slide=${current+1}`);
+ error.hidden=true;
+}
+prev.addEventListener('click',()=>display(current-1));next.addEventListener('click',()=>display(current+1));
+addEventListener('hashchange',()=>display(fromHash(),false));
+addEventListener('keydown',event=>{
+ if(event.altKey||event.ctrlKey||event.metaKey||/INPUT|TEXTAREA|SELECT/.test(event.target.tagName))return;
+ const indices={ArrowLeft:current-1,ArrowRight:current+1,Home:0,End:slides.length-1};
+ if(event.key in indices){event.preventDefault();display(indices[event.key]);}
+});
+document.querySelector('#fullscreen').addEventListener('click',async()=>{
+ try{
+  if(document.fullscreenElement)await document.exitFullscreen();
+  else await document.querySelector('#stage').requestFullscreen();
+ }catch(e){error.textContent='Browserul nu a putut deschide ecranul complet. Poti continua in aceasta pagina.';error.hidden=false;console.error('Fullscreen failed',e);}
+});
+image.addEventListener('error',()=>{error.textContent='Slide-ul nu s-a putut incarca. Reincarca pagina sau descarca PowerPoint-ul.';error.hidden=false;});
+fetch('slides.json').then(response=>{
+ if(!response.ok)throw new Error(`Slides: HTTP ${response.status}`);
+ return response.json();
+}).then(data=>{
+ if(!Array.isArray(data)||data.length!==14)throw new Error('Manifestul prezentarii este invalid.');
+ slides=data;display(fromHash(),false);
+}).catch(e=>{
+ error.textContent='Navigarea nu s-a putut incarca. Reincarca pagina sau descarca prezentarea PowerPoint.';error.hidden=false;
+ document.querySelector('#transcript').textContent='Text indisponibil. Prezentarea poate fi descarcata din linkul de mai sus.';
+ console.error('Presentation loading failed',e);
+});
+</script>
+</body>
+</html>

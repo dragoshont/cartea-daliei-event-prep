@@ -25,14 +25,14 @@
     "text": "Un fragment. Apoi inca unul.\n\nContext\n\n\"La biblioteca am...\"\n\nContinuari posibile\n\nModelul evalueaza variante.\n\nToken nou\n\n\"deschis\"\n\nContext actualizat\n\n\"La biblioteca am deschis...\"\n\nUn token este un fragment de text. Procesul se repeta."
   },
   {
-    "src": "slides/slide-06.svg?v=267b447385f1",
-    "title": "O idee poate deveni o pagina.",
-    "text": "O idee poate deveni o pagina.\n\nCe trebuie sa afli\nca sa decizi daca\nvrei sa participi?\n\nCapturi ale exemplului pregatit, cu detaliile marite. Eveniment fictiv."
+    "src": "slides/slide-06.svg?v=436ff72a653b",
+    "title": "Cerere vaga. Ce a completat AI?",
+    "text": "Cerere vaga. Ce a completat AI?\n\nPROMPTUL FOLOSIT\n\nCreeaza o pagina HTML pentru un eveniment la liceu. Vreau sa arate modern, sa fie interesanta pentru elevi si sa prezinte frumos activitatile, cu un titlu atractiv si un program bine organizat.\n\nCe detalii am lasat nespecificate?\n\nRezultat inregistrat · eveniment fictiv · captura 1280 x 900"
   },
   {
-    "src": "slides/slide-07.svg?v=f5f385143877",
-    "title": "Sa vedem ce intelege dintr-o idee.",
-    "text": "Sa vedem ce intelege dintr-o idee.\n\n\"Fa o pagina pentru\nun eveniment la liceu.\"\n\nCe a presupus? Ce lipseste? Ce trebuie sa decidem noi?\n\nIdee  >  Cerere  >  Prima versiune"
+    "src": "slides/slide-07.svg?v=e6db07ba6ee7",
+    "title": "Aceeasi idee, cu detalii concrete.",
+    "text": "Aceeasi idee, cu detalii concrete.\n\nPROMPTUL FOLOSIT\n\nCreeaza o pagina HTML pentru evenimentul fictiv Atelier de idei, la liceu: 30 octombrie, 17-19, sala festiva, gratuit. Include trei activitati de 40 minute, un buton spre program si afisare buna pe telefon.\n\nAcum avem ce sa comparam\nsi sa verificam.\n\nRezultat inregistrat · eveniment fictiv · captura 1280 x 900"
   },
   {
     "src": "slides/slide-08.svg?v=ba0e64232e47",
